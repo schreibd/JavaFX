@@ -18,7 +18,7 @@ public class SelfMadeSlider extends Application
 
     Circle circle;
     
-    Circle sexYbooty;
+    Circle circle2;
 
     public void start(Stage primaryStage)
     {
@@ -40,10 +40,10 @@ public class SelfMadeSlider extends Application
         circle = new Circle(200, 250, 10, Color.AQUA);
         root.getChildren().addAll(line, circle);
         
-        sexYbooty = new Circle(120, 120, 1);
-        root.getChildren().add(sexYbooty);
-        sexYbooty.setStroke(Color.BLACK);
-        sexYbooty.setFill(null);
+        circle2 = new Circle(120, 120, 1);
+        root.getChildren().add(circle2);
+        circle2.setStroke(Color.BLACK);
+        circle2.setFill(null);
         drawTicks();
 
 
@@ -84,11 +84,11 @@ public class SelfMadeSlider extends Application
             y = newY;
             
             
-            sexYbooty.setRadius((200-circle.getCenterX())*-1);
-            root.getChildren().addAll(line, sexYbooty);
+            circle2.setRadius((200-circle.getCenterX())*-1);
+            root.getChildren().addAll(line, circle2);
             drawTicks();
-            System.out.println(sexYbooty.getCenterX());
-            System.out.println(sexYbooty.getRadius());
+            System.out.println(circle2.getCenterX());
+            System.out.println(circle2.getRadius());
         }
     }
     
