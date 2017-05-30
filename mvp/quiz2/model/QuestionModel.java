@@ -23,11 +23,11 @@ public class QuestionModel
     public void createQuestionCatalogue()
     {
         questionList = FXCollections.observableArrayList();
-        SimpleStringProperty question = new SimpleStringProperty("Welche Figuren kamen der Reihe nach in Star Wars Episode IV vor?");
+        SimpleStringProperty question = new SimpleStringProperty("Ordne die Zahlen von Groß nach Klein");
         String[] answers =
-        { "Luke Skywalker", "R2D2 & C3PO", "Darth Vader", "Obi Wan Kenobi", "Prinzessin Leia", "Han Solo" };
+        { "98", "112", "4", "0", "300", "9999" };
         String[] order =
-        { "Darth Vader", "R2D2 & C3PO", "Prinzessin Leia", "Luke Skywalker", "Obi Wan Kenobi", "Han Solo" };
+        { "9999", "300", "112", "98", "4", "0" };
         createQuestion(question, answers, order);
 
         question = new SimpleStringProperty("Ordne die Zahlen nach Größe");
